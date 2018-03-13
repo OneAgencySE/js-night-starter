@@ -1,0 +1,25 @@
+{
+  "name": "@chimpiq/tic-tac-toe-starter",
+  "version": "1.0.0",
+  "description": "JS Night tic-tac-toe starter",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html",
+    "lint": "eslint src",
+    "test": "jest src"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.2",
+    "babel-jest": "22.4.1",
+    "babel-preset-env": "1.6.1",
+    "eslint": "4.18.2",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "jest": "22.4.2",
+    "parcel-bundler": "1.6.2",
+    "prettier": "1.11.1"
+  },
+  "dependencies": {
+    "core-js": "2.5.3"
+  }
+}

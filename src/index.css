@@ -1,0 +1,96 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6D95A;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 3.6rem;
+    margin: 0 0 2rem 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem;
+}
+
+.emoji {
+    font-size: 5.6rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 300px;
+}
+
+@supports (display: grid) {
+    .board {
+        display: grid;
+        grid-template-columns: 95px 95px 95px;
+        grid-template-rows: 95px 95px 95px;
+        grid-column-gap: 7.5px;
+        grid-row-gap: 7.5px;
+        justify-content: center;
+    }
+}
+
+.cell {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid orange;
+    border-radius: 4px;
+    color: #fff;
+    width: 95px;
+    height: 95px;
+    margin-bottom: 7px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: rgba(0, 0, 0, 0.6);   
+}
+
+@media (min-width:600px) { 
+    h1 {
+        font-size: 5.6rem;
+    }
+    .emoji {
+        font-size: 7.2rem;
+    }
+ }
+
+@media (min-width:801px) { 
+    h1 {
+        font-size: 7.2rem;
+    }
+    .emoji {
+        font-size: 8.8rem;
+    }
+
+    .game {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .board {
+        margin-right: 20px;
+    }
+}
