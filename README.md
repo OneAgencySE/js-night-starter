@@ -1,4 +1,4 @@
-# JS Night - TIC-TAC-TOE starter project
+# One Agency JS Night starter project
 
 ## Instructions
 1. Run `npm install` to install dependencies
