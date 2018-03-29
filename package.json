@@ -1,7 +1,7 @@
 {
   "name": "js-night-starter",
   "version": "1.0.0",
-  "description": "JS Night tic-tac-toe starter",
+  "description": "One Agency JS Night starter project",
   "private": true,
   "scripts": {
     "start": "parcel src/index.html",
