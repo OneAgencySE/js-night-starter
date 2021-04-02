@@ -5,8 +5,9 @@ export default function template({ status = 'No status', board }) {
               ${board
                 .map(
                   (value, key) =>
-                    `<button type="button" class="cell" data-key="${key}">${value ||
-                      ''}</button>`,
+                    `<button type="button" class="cell" data-key="${key}">${
+                      value || ''
+                    }</button>`,
                 )
                 .join('')}
           </div>

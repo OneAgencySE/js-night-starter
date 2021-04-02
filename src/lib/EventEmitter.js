@@ -11,14 +11,14 @@ class EventEmitter {
     this.events[eventName].push(eventHandler);
 
     return () => {
-      this.events[eventName].filter(handler => handler !== eventHandler);
+      this.events[eventName].filter((handler) => handler !== eventHandler);
     };
   }
 
   emit(eventName, data) {
     const event = this.events[eventName];
     if (event) {
-      event.forEach(handler => {
+      event.forEach((handler) => {
         handler.call(null, data);
       });
     }

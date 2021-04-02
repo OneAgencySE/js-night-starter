@@ -7,7 +7,7 @@ const state = {
   xIsNext: true,
 };
 game.render(state);
-game.onPlayerMove(cellKey => {
+game.onPlayerMove((cellKey) => {
   state.board[cellKey] = state.xIsNext ? 'X' : 'O';
   state.xIsNext = !state.xIsNext;
   game.render(state);
